@@ -14,7 +14,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 CSRF_ENABLED = True
 
 #------------------------------
-# GLOBALS FOR APP Builder 
+# GLOBALS FOR APP Builder
 #------------------------------
 # Uncomment to setup Your App name
 #APP_NAME = "My App Name"
@@ -33,13 +33,13 @@ CSRF_ENABLED = True
 AUTH_TYPE = AUTH_DB
 
 # Uncomment to setup Full admin role name
-#AUTH_ROLE_ADMIN = 'Admin'
+AUTH_ROLE_ADMIN = 'Admin'
 
 # Uncomment to setup Public role name, no authentication needed
-#AUTH_ROLE_PUBLIC = 'Public'
+AUTH_ROLE_PUBLIC = 'Public'
 
 # Will allow user self registration
-#AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION = True
 
 # The default user self registration role
 #AUTH_USER_REGISTRATION_ROLE = "Public"
@@ -62,14 +62,21 @@ BABEL_DEFAULT_LOCALE = 'en'
 BABEL_DEFAULT_FOLDER = 'translations'
 # The allowed translation for you app
 LANGUAGES = {
-    'en': {'flag':'gb', 'name':'English'},
-    'pt': {'flag':'pt', 'name':'Portuguese'},
-    'pt_BR': {'flag':'br', 'name': 'Pt Brazil'},
-    'es': {'flag':'es', 'name':'Spanish'},
-    'de': {'flag':'de', 'name':'German'},
-    'zh': {'flag':'cn', 'name':'Chinese'},
-    'ru': {'flag':'ru', 'name':'Russian'},
-    'pl': {'flag':'pl', 'name':'Polish'}
+    'en'    : {'flag' : 'gb', 'name' : 'English'},
+    'sw'    : {'flag' : 'ke', 'name' : 'Kiswahili'},
+    'luo'   : {'flag' : 'ke', 'name' : 'Luo'},
+    'kik'   : {'flag' : 'ke', 'name' : 'Kikuyu'},
+    'kam'   : {'flag' : 'ke', 'name' : 'Kamba'},
+    'luy'   : {'flag' : 'ke', 'name' : 'Luhya'},
+    'teo'   : {'flag' : 'ke', 'name' : 'Ateso'},
+    'mer'   : {'flag' : 'ke', 'name' : 'Meru'},
+    'pt'    : {'flag' : 'pt', 'name' : 'Portuguese'},
+    'pt_BR' : {'flag' : 'br', 'name' : 'Pt Brazil'},
+    'es'    : {'flag' : 'es', 'name' : 'Spanish'},
+    'de'    : {'flag' : 'de', 'name' : 'German'},
+    'zh'    : {'flag' : 'cn', 'name' : 'Chinese'},
+    'ru'    : {'flag' : 'ru', 'name' : 'Russian'},
+    'pl'    : {'flag' : 'pl', 'name' : 'Polish'}
 }
 #---------------------------------------------------
 # Image and file configuration
@@ -92,12 +99,12 @@ IMG_UPLOAD_URL = '/static/uploads/'
 #APP_THEME = "cerulean.css"
 #APP_THEME = "amelia.css"
 #APP_THEME = "cosmo.css"
-#APP_THEME = "cyborg.css"  
+#APP_THEME = "cyborg.css"
 #APP_THEME = "flatly.css"
 #APP_THEME = "journal.css"
 #APP_THEME = "readable.css"
 #APP_THEME = "simplex.css"
-#APP_THEME = "slate.css"   
+#APP_THEME = "slate.css"
 #APP_THEME = "spacelab.css"
 #APP_THEME = "united.css"
 #APP_THEME = "yeti.css"
