@@ -109,3 +109,11 @@ IMG_UPLOAD_URL = '/static/uploads/'
 #APP_THEME = "united.css"
 #APP_THEME = "yeti.css"
 
+# To manage Flask-Mail
+MAIL_PORT=587
+MAIL_USE_SSL=False
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_USE_TLS = True
+MAIL_USERNAME = 'elimu.bora.emis@gmail.com'
+MAIL_PASSWORD = 'Abcd1234.'
+MAIL_DEFAULT_SENDER = 'elimu.bora.emis@gmail.com'
